@@ -14,7 +14,11 @@ To evaluate gradient descent as an optimization method across
 different model types, using CO2 emissions data as the testing 
 ground — and determine which model it fits most effectively.
 
-Method: Gradient Descent
+## Method: Gradient Descent
 Rather than using built-in curve-fitting libraries, this project 
 manually implements gradient descent to iteratively minimize 
 prediction error (MAE loss) across 1000+ training epochs.
+
+
+## Programming 
+- Python 3
