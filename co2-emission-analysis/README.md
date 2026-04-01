@@ -1,7 +1,7 @@
 # 🌍 Global CO2 Emission Quantitative Analysis
 ## 📌 The Problem
 Gradient descent is a fundamental optimization algorithm in machine 
-learning — but how well does it perform when applied to real-world 
+learning but how well does it perform when applied to real-world 
 environmental data with complex, non-linear growth patterns?
 
 This project uses global CO2 emissions (1940–2024) as a case study 
