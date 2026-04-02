@@ -19,6 +19,9 @@ Rather than using built-in curve-fitting libraries, this project
 manually implements gradient descent to iteratively minimize 
 prediction error (MAE loss) across 1000+ training epochs.
 
-$$y = \theta_0 + \theta_1 x + \theta_2 x^2$$
+The core update rule used in gradient descent:
+
+$$\theta = \theta - \alpha \cdot \nabla_\theta J(\theta)$$
+
 ## Programming 
 - Python 3
