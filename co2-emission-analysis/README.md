@@ -19,9 +19,24 @@ Rather than using built-in curve-fitting libraries, this project
 manually implements gradient descent to iteratively minimize 
 prediction error (MAE loss) across 1000+ training epochs.
 
-The core update rule used in gradient descent:
+The gradient descent equation used:
 
-$$\theta = \theta - \alpha \cdot \nabla_\theta J(\theta)$$
+$$\theta = \theta - lr * \frac{d}{d\theta}J(\theta)$$
+Where:
+- $\theta$ = model parameters $(w, b)$
+- $lr$ = learning rate
+- $J(\theta)$ = loss function (MAE)
+
+Models Applied
+
+**Linear:**
+$$\hat{y} = wx + b$$
+
+**Quadratic:**
+$$\hat{y} = w_1x^2 + w_2x + b$$
+
+**Exponential:**
+$$\hat{y} = b \cdot e^{wx}$$
 
 ## Programming 
 - Python 3
