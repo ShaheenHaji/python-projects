@@ -26,6 +26,8 @@ Where:
 - $\theta$ = model parameters $(w, b)$
 - $lr$ = learning rate
 - $J(\theta)$ = loss function (MAE)
+  Loss Function (MAE):
+$$J(w,b) = \frac{1}{m}\sum_{i=1}^{m}|y_i - \hat{y}_i|$$
 
 Models Applied
 
