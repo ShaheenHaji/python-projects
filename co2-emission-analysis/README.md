@@ -42,5 +42,5 @@ $$\hat{y} = w_1x^2 + w_2x + b$$
 **Exponential:**
 $$\hat{y} = b \cdot e^{wx}$$
 
-## Programming 
+## Technologies Used
 - Python 3
