@@ -31,7 +31,14 @@ Where:
 
 $$y(t) = \frac{Ky_0e^{rt}}{K + y_0(e^{rt} - 1)}$$
 
-This gives us the ground truth to measure both methods against:
+The logistic ODE gives us the true population for every year from 1960 to 2000, 
+which will compared with the result both methods against:
+
+If we calculate population of 2000, then
+t = 40 (representing the 40-year span from 1960 to 2000)
+
+$$y(40) = \frac{(1{,}300{,}000)(200{,}000)e^{0.08 \times 40}}
+{1{,}300{,}000 + 200{,}000(e^{0.08 \times 40} - 1)} 
 $$y(40) = 1{,}061.92 \text{ thousand}$$
 
 ## ⚙️ Numerical Methods
