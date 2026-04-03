@@ -27,9 +27,33 @@ Where:
 - $K$ = carrying capacity (1,300,000)
 - $y_0$ = initial population (200,000 in 1960)
 
-  ### Exact Analytical Solution (used as benchmark):
+### Exact Analytical Solution (used as benchmark):
 
 $$y(t) = \frac{Ky_0e^{rt}}{K + y_0(e^{rt} - 1)}$$
 
 This gives us the ground truth to measure both methods against:
 $$y(40) = 1{,}061.92 \text{ thousand}$$
+
+## ⚙️ Numerical Methods
+
+### 1️⃣ Euler Method
+The simplest numerical approach , it approximates the next value 
+using a single slope at the current point:
+
+$$y_{i+1} = y_i + h f(t_i, y_i)$$
+
+Where $h$ is the step size. 
+
+### 2️⃣ 4th-Order Runge-Kutta (RK4)
+A far more sophisticated approach , it calculates four 
+intermediate slopes per step and combines them in a 
+weighted average:
+
+$$y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
+
+Where:
+$$k_1 = f(t_n, y_n)$$
+$$k_2 = f\left(t_n + \frac{h}{2}, y_n + \frac{h}{2}k_1\right)$$
+$$k_3 = f\left(t_n + \frac{h}{2}, y_n + \frac{h}{2}k_2\right)$$
+$$k_4 = f(t_n + h, y_n + hk_3)$$
+
